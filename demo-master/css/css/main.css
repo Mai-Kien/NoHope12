@@ -6,7 +6,7 @@
 body{
     display: flex;
     height: 100vh;
-    background: linear-gradient(to right,#54c95e,#27ff20e1);
+    background: linear-gradient(to right,#5a73c0,#27ff20e1);
 
 }
 .grid.wide{
