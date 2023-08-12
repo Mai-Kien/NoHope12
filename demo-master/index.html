@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/css/main.css">
+    <link rel="stylesheet" href="./css/css/base.css">
+    <link rel="stylesheet" href="./css/css/grid.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css"> -->
+
+    <title>Quản lý sinh viên 
+    </title>
+</head>
+<body>
+      <div class="grid wide">
+        <div class="container">
+          <div class="row">
+            <div class="col col-12">
+              <div class="row">
+                <span class="col col-3">Mã sinh viên:</span>
+                <div class="col col-8">
+                  <input id="form-msv" type="text" placeholder="71DCTT22081">
+                </div>
+              </div>
+            </div>
+            <div class="col col-12">
+              <div class="row">
+                <span class="col col-3">Họ tên:</span>
+                <div class="col col-8">
+                  <input id="form-name" type="text" placeholder="Mai Trung Kiên">
+                </div>
+              </div>
+            </div>
+            <div class="col col-12">
+              <div class="row">
+                <span class="col col-3">Tuổi:</span>
+                <div class="col col-8">
+                  <input id="form-age" type="text" placeholder="1">
+                </div>
+              </div>
+              <button id="btn" onclick="add()" class="btn-add">
+                ADD
+              </button>
+              <button id="btn-search" onclick="search()" class="btn-add">
+                SEARCH
+              </button>
+              <div class="col col-12 search">
+                <input id="search" type="text" placeholder="Bạn Cần Tìm?">
+              </div>
+
+            </div>
+        </div>
+      </div>
+       <ul class="ul list-student">
+        <div class="container">
+          <li id="render" class="item-student">
+
+          </li>
+        </div>
+       </ul>
+    </div>
+</body>
+<script src="./js/main.js"></script>
+</html> 
